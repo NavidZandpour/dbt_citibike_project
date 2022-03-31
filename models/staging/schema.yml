@@ -1,0 +1,7 @@
+
+version: 2
+
+models:
+    - name: stg_station_information
+    - name: stg_station_status
+    
