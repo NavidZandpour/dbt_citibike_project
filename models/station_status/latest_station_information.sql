@@ -11,7 +11,7 @@ with station_information as  (
 
 latest_station_status as (
     select *
-    from {{ ref('stg_station_status') }}
+    from {{ ref('latest_station_status') }}
    
 ),
 
