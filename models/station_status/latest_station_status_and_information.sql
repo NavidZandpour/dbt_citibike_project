@@ -40,7 +40,8 @@ final as (
     name,
     region_id,
     rental_methods,
-    rental_uris,
+    android_rental_uri,
+    ios_rental_uri,
     short_name,
     s.station_id,
     station_type

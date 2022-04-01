@@ -17,10 +17,10 @@ f.value:lon as lon,
 f.value:name as name,
 f.value:region_id as region_id,
 f.value:rental_methods as rental_methods,
-f.value:rental_uris as rental_uris,
+f.value:rental_uris:android as android_rental_uri,
+f.value:rental_uris:ios as ios_rental_uri,
 f.value:short_name as short_name,
 f.value:station_id as station_id,
 f.value:station_type as station_type
 
 from {{ source('station', 'station_information') }}, lateral flatten(input => V:data.stations) f
-
